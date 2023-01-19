@@ -1,0 +1,54 @@
+@import url('vars.css');
+@import url('null.css');
+
+.container {
+    max-width: 900px;
+    margin:  2rem auto 2rem auto;
+}
+.add-todo {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.add-todo__input {
+    background-color: var(--site-white);
+    padding: .5rem;
+    font-size: 1rem;
+    border: 1px var(--site-black) solid;
+}
+.add-todo__btn {
+    padding: .5rem;
+    color: var(--site-f-white);
+    background-color: var(--site-black);
+    font-size: 1rem;
+}
+.todos {
+    margin: 1rem 0 0 0;
+}
+.todos__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.todos__todo {
+    display: grid;
+    grid-template-columns: 10fr 2fr;
+}
+.todo {
+    border: 1px var(--site-black) solid;
+    margin: .5rem 0 0 0;
+}
+.todo__text {
+    padding: .5rem;
+}
+.todo__btn {
+    font-size: 1rem;
+    background-color: var(--site-white);
+    display: grid;
+    place-items: center;
+
+}
+._hover {
+    transition: .3s ease-in;
+}
+._hover:hover {
+    filter: invert();
+}
